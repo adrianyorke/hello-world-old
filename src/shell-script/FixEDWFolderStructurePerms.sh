@@ -19,7 +19,7 @@ then
     echo "Incorrect arguments specified."
     echo "Usage: `basename $0` [Project Name] [Data Source Code]"
     exit 1
-fi
+fi ;
 
 rootPath="/data/datastage";
 projectName="$1";
