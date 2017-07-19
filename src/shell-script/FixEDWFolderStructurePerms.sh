@@ -16,9 +16,9 @@
 # check mandatory arguments have been provided.
 if [ $# -ne 2 ]
 then
-    echo "Incorrect arguments specified."
-    echo "Usage: `basename $0` [Project Name] [Data Source Code]"
-    exit 1
+    echo "Incorrect arguments specified.";
+    echo "Usage: `basename $0` [Project Name] [Data Source Code]";
+    exit 1;
 fi ;
 
 rootPath="/data/datastage";
@@ -58,4 +58,4 @@ then
 	exit 1;
 fi ;
 
-exit 0
+exit 0;
