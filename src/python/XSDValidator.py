@@ -1,20 +1,24 @@
 #!/usr/bin/env python2
+"""Module docstring [pylint-C0111]."""
 
 # Simple XML against XSD Validator for Python 2.7 - 3.2
 # to run this script you need additionally: lxml (http://lxml.de)
 # author: Gabor Laszlo Hajba, 2013
+
+from __future__ import print_function
 
 import sys
 from lxml import etree
 
 xsd_files = []
 xml_files = []
-   
+
 def usage():
+    """Function docstring [pylint-C0111]."""
     print("Usage: ")
     print("python XSDValidator.py <list of xml files> <list of xsd files>")
     print("At least one .xml and one .xsd file is required.")
-    
+
 def validate_files():
     """ validates every xml file against every schema file"""
     for schema in xsd_files:
@@ -28,9 +32,10 @@ def validate_files():
                 print(file + " is not valid against " + schema)
                 for error in iter(log):
                     print("\tReason: " + error.message)
-    
+
 def main():
-    if(len(sys.argv) < 3):
+    """Function docstring [pylint-C0111]."""
+    if len(sys.argv) < 3:
         usage()
         sys.exit()
     for arg in sys.argv[1:]:
@@ -42,6 +47,6 @@ def main():
         usage()
         sys.exit()
     validate_files()
-        
+
 if __name__ == '__main__':
     main()

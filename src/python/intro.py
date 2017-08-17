@@ -1,3 +1,5 @@
+#!/usr/bin/env python2
+
 # Welcome! This is a Python program file
 
 # The lines that start with a hash (#) are comments
@@ -11,16 +13,16 @@
 
 # 1. This is the print statement
 
-print("Hello world")
+# print("Hello world")
 
 # GO!
 
 # 2. This is a variable
 
-message = "Level Two"
+# message = "Level Two"
 
 # Add a line below to print this variable
-
+# print(message)
 # GO!
 
 # 3. The variable above is called a string
@@ -35,6 +37,7 @@ b = 654
 c = a + b
 
 # Try printing the value of c below to see the answer
+# print(c)
 # GO!
 
 # 5. You can use other operators like subtract (-) and multiply (*)
@@ -45,6 +48,10 @@ c = a + b
 # 12 times 4
 # 103 add 999
 
+# print a * b
+# print b - a
+# print 12 * 4
+# print 103 + 999
 # GO!
 
 # 6. Variables keep their value until you change it
@@ -63,7 +70,7 @@ d = 10 + a - c
 # 7. You can also use '+' to add together two strings
 
 greeting = 'Hi '
-name = ''  # enter your name in this string
+name = 'Adrian'  # enter your name in this string
 
 message = greeting + name
 # print(message)
@@ -72,7 +79,7 @@ message = greeting + name
 
 # 8. Try adding a number and a string together and you get an error:
 
-# age =  # enter your age here (as a number)
+age = 48 # enter your age here (as a number)
 
 # print(name + ' is ' + age + ' years old')
 
@@ -92,7 +99,7 @@ message = greeting + name
 
 # Or we could just make sure we enter it as a string:
 
-# age =  # enter your age here, as a string
+age = '48' # enter your age here, as a string
 
 # print(name + ' is ' + age + ' years old')
 
@@ -109,7 +116,7 @@ raspberry_pi_is_expensive = False
 # We can also compare two variables using ==
 
 bobs_age = 15
-# your_age =  # fill in your age
+your_age = 48 # fill in your age
 
 # print(your_age == bobs_age)  # this prints either True or False
 
@@ -117,7 +124,7 @@ bobs_age = 15
 
 # 11. We can use less than and greater than too - these are < and >
 
-# bob_is_older = bobs_age > your_age
+bob_is_older = bobs_age > your_age
 
 # print(bob_is_older)  # do you expect True or False?
 
