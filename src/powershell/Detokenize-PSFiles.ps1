@@ -10,7 +10,7 @@
 	Created: 30.05.2017
 #>
 
-cls
+Clear-Host
 
 $DebugPreference = "Continue"
 
