@@ -10,7 +10,6 @@ print 'Hello, world!'
 print '---------- dir(sys)'
 print dir(sys)
 
-
 # print sys.__doc__
 
 print '---------- sys.modules'
