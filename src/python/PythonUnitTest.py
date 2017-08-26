@@ -35,5 +35,5 @@ class TestStringMethods(unittest.TestCase):
             mystr.split(2)
 
 if __name__ == '__main__':
-    print(sys.version_info)
+    print('Python Version:',sys.version_info)
     unittest.main()
