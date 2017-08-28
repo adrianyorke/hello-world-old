@@ -18,45 +18,12 @@ def main():
     cwd = os.getcwd()
     print(cwd)
 
-    os.chdir('c:\\temp')
+    os.chdir(r'c:\temp')
     cwd = os.getcwd()
     print(cwd)
 
-    #path = os.path.join("C:\\","temp")
-    # rootpath = os.path.join(
-    #     "C:\\"
-    #     , "Temp"
-    #     , "svn-temp"
-    #     , "edw"
-    #     , "enterprise-data-warehouse"
-    #     , "trunk"
-    #     , "src"
-    #     , "teradata"
-    #     , "DDL"
-    #     , "DBADMIN"
-    #     )
+class DBNamingConventionsTestCase(unittest.TestCase):
 
-    #if os.path.exists(path):
-    #    print(path + ' : exists')
-    #    if os.path.isdir(path):
-    #        print(path + ' : is a directory')
-
-    #for root, dirs, files in os.walk(rootpath):
-    #    print("{0} has {1} file(s)".format(root, len(files)))
-
-    #files = os.listdir(rootpath)
-    #for f in files:
-    #    print(f)
-
-    # fileList = []
-    # for file in os.listdir(rootpath):
-    #     fileList.append(file)
-    # print(fileList)
-
-    return 0
-
-class NamingConventionsTestCase(unittest.TestCase):
-    """
     def test_checkprefix(self):
         allTestsHavePassed = True
 
@@ -74,28 +41,35 @@ class NamingConventionsTestCase(unittest.TestCase):
             )
 
         for file in os.listdir(rootpath):
-            if re.match(r'^D_ACQ', file, flags=0):
+            if re.search(r'^D_ACQ', file, flags=0):
                 pass
-            elif re.match(r'^V_ACQ', file, flags=0):
+            elif re.search(r'^V_ACQ', file, flags=0):
                 pass
-            elif re.match(r'^UDF', file, flags=0):
+            elif re.search(r'^UDF', file, flags=0):
                 pass
-            elif re.match(r'^V_IDL', file, flags=0):
+            elif re.search(r'^V_IDL', file, flags=0):
                 pass
-            elif re.match(r'^D_IDL', file, flags=0):
+            elif re.search(r'^D_IDL', file, flags=0):
                 pass
-            elif re.match(r'^D_LRY', file, flags=0):
+            elif re.search(r'^D_LRY', file, flags=0):
                 pass
-            elif re.match(r'^V_LRY', file, flags=0):
+            elif re.search(r'^V_LRY', file, flags=0):
                 pass
-            elif re.match(r'^ACQ_ABAS', file, flags=0):
+            elif re.search(r'^ACQ_ABAS', file, flags=0):
+                pass
+            elif re.search(r'^_GCFR_D', file, flags=0):
+                pass
+            elif re.search(r'^_GCFR_P', file, flags=0):
+                pass
+            elif re.search(r'^_GCFR_V', file, flags=0):
+                pass
+            elif re.search(r'^D_WRK', file, flags=0):
                 pass
             else:
                 print(file)
                 allTestsHavePassed = False
 
         self.assertEqual(allTestsHavePassed, True)
-    """
 
     def test_checksuffix(self):
         allTestsHavePassed2 = True
@@ -114,17 +88,25 @@ class NamingConventionsTestCase(unittest.TestCase):
             )
 
         for file in os.listdir(rootpath2):
-            if re.match(r'_STA$', file, flags=0):
+            if re.search(r'_STA$', file, flags=0):
                 pass
-            elif re.match(r'_STG$', file, flags=0):
+            elif re.search(r'_STG$', file, flags=0):
                 pass
-            elif re.match(r'FSDM_BSE$', file, flags=0):
+            elif re.search(r'FSDM_BSE$', file, flags=0):
                 pass
-            elif re.match(r'CMMN_INM$', file, flags=0):
+            elif re.search(r'CMMN_INM$', file, flags=0):
                 pass
-            elif re.match(r'N_INPUT$', file, flags=0):
+            elif re.search(r'N_INPUT$', file, flags=0):
                 pass
-            elif re.match(r'N_OUTPUT$', file, flags=0):
+            elif re.search(r'N_OUTPUT$', file, flags=0):
+                pass
+            elif re.search(r'FSDM_N_BASE$', file, flags=0):
+                pass
+            elif re.search(r'UDF$', file, flags=0):
+                pass
+            elif re.search(r'_UTLFW$', file, flags=0):
+                pass
+            elif re.search(r'_CUSTOM$', file, flags=0):
                 pass
             else:
                 print(file)
