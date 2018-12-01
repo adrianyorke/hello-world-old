@@ -20,13 +20,13 @@ print("Hello world")
 message = "Level Two"
 
 # Add a line below to print this variable
-
+print(message.lower())
 # GO!
 
 # 3. The variable above is called a string
 # You can use single or double quotes (but must close them)
 # You can ask Python what type a variable is. Try uncommenting the next line:
-# print(type(message))
+print(type(message))
 # GO!
 
 # 4. Another type of variable is an integer (a whole number)
@@ -35,6 +35,7 @@ b = 654
 c = a + b
 
 # Try printing the value of c below to see the answer
+print(c)
 # GO!
 
 # 5. You can use other operators like subtract (-) and multiply (*)
@@ -44,7 +45,10 @@ c = a + b
 # b minus a
 # 12 times 4
 # 103 add 999
-
+print(a*b)
+print(b-a)
+print(12*4)
+print(103+999)
 # GO!
 
 # 6. Variables keep their value until you change it
@@ -57,22 +61,22 @@ c = 50
 
 d = 10 + a - c
 # print(d)  # think - what should this be now?
-
+print(d)
 # GO!
 
 # 7. You can also use '+' to add together two strings
 
 greeting = 'Hi '
-name = ''  # enter your name in this string
+name = 'Lord Adrian'  # enter your name in this string
 
 message = greeting + name
-# print(message)
+print(message)
 
 # GO!
 
 # 8. Try adding a number and a string together and you get an error:
 
-# age =  # enter your age here (as a number)
+age =  49 # enter your age here (as a number)
 
 # print(name + ' is ' + age + ' years old')
 
@@ -84,7 +88,7 @@ message = greeting + name
 
 # 9. We can convert numbers to strings like this:
 
-# print(name + ' is ' + str(age) + ' years old')
+print(name + ' is ' + str(age) + ' years old')
 
 # GO!
 
@@ -92,9 +96,9 @@ message = greeting + name
 
 # Or we could just make sure we enter it as a string:
 
-# age =  # enter your age here, as a string
+age =  '49' # enter your age here, as a string
 
-# print(name + ' is ' + age + ' years old')
+print(name + ' is ' + age + ' years old')
 
 # GO!
 
@@ -109,9 +113,9 @@ raspberry_pi_is_expensive = False
 # We can also compare two variables using ==
 
 bobs_age = 15
-# your_age =  # fill in your age
+your_age =  49 # fill in your age
 
-# print(your_age == bobs_age)  # this prints either True or False
+print(your_age == bobs_age)  # this prints either True or False
 
 # GO!
 
@@ -127,17 +131,17 @@ bobs_age = 15
 
 money = 500
 phone_cost = 240
-tablet_cost = 200
+tablet_cost = 260
 
 total_cost = phone_cost + tablet_cost
-can_afford_both = money > total_cost
+can_afford_both = money >= total_cost
 
 if can_afford_both:
     message = "You have enough money for both"
 else:
     message = "You can't afford both devices"
 
-# print(message)  # what do you expect to see here?
+print(message)  # what do you expect to see here?
 
 # GO!
 
@@ -169,7 +173,7 @@ colours = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet']
 
 # You can check whether a colour is in the list
 
-# print('Black' in colours)  # Prints True or False
+print('Black' in colours)  # Prints True or False
 
 # GO!
 
@@ -178,7 +182,7 @@ colours = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet']
 colours.append('Black')
 colours.append('White')
 
-# print('Black' in colours)  # Should this be different now?
+print('Black' in colours)  # Should this be different now?
 
 # GO!
 
@@ -189,7 +193,7 @@ more_colours = ['Gray', 'Navy', 'Pink']
 colours.extend(more_colours)
 
 # Try printing the list to see what's in it
-
+print(colours)
 # GO!
 
 # 14. You can add two lists together in to a new list using +
@@ -211,7 +215,7 @@ all_colours = colours + main_colours
 
 # How many colours are there in all_colours?
 # Do it here. Try to think what you expect before you run it
-
+print(len(colours))
 # GO!
 
 # Did you get what you expected? If not, why not?
@@ -222,13 +226,14 @@ even_numbers = [2, 4, 6, 8, 10, 12]
 multiples_of_three = [3, 6, 9, 12]
 
 numbers = even_numbers + multiples_of_three
-# print(numbers, len(numbers))
+print(numbers, len(numbers))
 numbers_set = set(numbers)
-# print(numbers_set, len(numbers_set))
+print(numbers_set, len(numbers_set))
 
 # GO!
 
 colour_set = set(all_colours)
+print(len(colour_set))
 # How many colours do you expect to be in this time?
 # Do you expect the same or not? Think about it first
 
@@ -239,12 +244,17 @@ my_class = ['Sarah', 'Bob', 'Jim', 'Tom', 'Lucy', 'Sophie', 'Liz', 'Ed']
 # Below is a multi-line comment
 # Delete the ''' from before and after to uncomment the block
 
-'''
 for student in my_class:
     print(student)
-'''
 
 # Add all the names of people in your group to this list
+my_group = ['Adrian', 'Kati', 'Lumi']
+my_class.extend(my_group)
+
+x=1
+for student in my_class:
+    print(str(x)+':', student)
+    x += 1
 
 # Remember the difference between append and extend. You can use either.
 
@@ -267,14 +277,18 @@ middle = full_name[8:14]
 my_sentence = "Hello, my name is Fred"
 parts = my_sentence.split(',')
 
-# print(parts)
-# print(type(parts))  # What type is this variable? What can you do with it?
+print(parts)
+print(type(parts))  # What type is this variable? What can you do with it?
 
 # GO!
 
 my_long_sentence = "This is a very very very very very very long sentence"
 
 # Now split the sentence and use this to print out the number of words
+
+word_list = my_long_sentence.split(' ')
+print(len(word_list))
+print(word_list)
 
 # GO! (Clues below if you're stuck)
 
@@ -301,16 +315,30 @@ students = [
 
 # Now write a loop to print each of the students' names and age
 
+for student, age in students:
+    print('{} is {} years old.'.format(student, str(age)))
 # GO!
 
 # 21. Tuples can be any length. The above examples are 2-tuples.
 
 # Try making a list of students with (name, age, favourite subject and sport)
+students = [
+    ('Dave', 12, 'maths', 'darts'),
+    ('Sophia', 13, 'geography', 'bowling'),
+    ('Sam', 12, 'english', 'curling'),
+    ('Kate', 11, 'maths', 'football'),
+    ('Daniel', 10, 'english', 'rugby')
+]
 
 # Now loop over them printing each one out
+#for student, age, subject, sport in students:
+#    print('{} is {} years old and likes {} and {}'.format(student, str(age), subject, sport))
 
 # Now pick a number (in the students' age range)
 # Make the loop only print the students older than that number
+for student, age, subject, sport in students:
+    if age > 12:
+        print('{} is {} years old and likes {} and {}'.format(student, str(age), subject, sport))
 
 # GO!
 
@@ -370,6 +398,13 @@ for name in addresses:
 
 # 23. A final challenge using the skills you've learned:
 # What is the sum of all the digits in all the numbers from 1 to 1000?
+
+total = 0
+for i in range(1,1000):
+    for digit in str(i):
+        total += int(digit)
+    print(i,total)
+#print(total)
 
 # GO!
 
