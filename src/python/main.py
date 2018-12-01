@@ -1,6 +1,8 @@
 #!/usr/bin/env python2
+"""Module docstring [pylint-C0111]."""
 
-import os
+from __future__ import print_function
+
 import sys
 
 # INFO: Sample files - https://www.w3schools.com/xml/schema_example.asp
@@ -9,7 +11,7 @@ import sys
 
 # Modified XSD file to make it fail: renamed element title to title_fail
 
-print 'Starting this beautiful thing...'
+print('Starting this beautiful thing...')
 
-sys.argv = ['XSDValidator.py','shiporder.xml','shiporder.xsd']
+sys.argv = ['XSDValidator.py', 'shiporder.xml', 'shiporder.xsd']
 execfile('XSDValidator.py')

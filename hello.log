@@ -1,0 +1,10 @@
+2017-08-20 00:16:43,617 - __name__ - DEBUG - debug message
+2017-08-20 00:16:43,618 - __name__ - INFO - info message
+2017-08-20 00:16:43,618 - __name__ - WARNING - warn message
+2017-08-20 00:16:43,621 - __name__ - ERROR - error message
+2017-08-20 00:16:43,621 - __name__ - CRITICAL - critical message
+2017-08-20 00:17:28,763 - __main__ - DEBUG - debug message
+2017-08-20 00:17:28,765 - __main__ - INFO - info message
+2017-08-20 00:17:28,766 - __main__ - WARNING - warn message
+2017-08-20 00:17:28,766 - __main__ - ERROR - error message
+2017-08-20 00:17:28,769 - __main__ - CRITICAL - critical message
